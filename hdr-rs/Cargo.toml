@@ -1,0 +1,12 @@
+[package]
+name = "hdr-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "hdr_rs"
+crate-type = ["staticlib"]
+
+[dependencies]
+hdr10plus = { version = "1.1.0", features = ["hevc_parser", "json"] }
